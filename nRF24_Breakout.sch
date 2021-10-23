@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:Conn_01x08_Male J1
-U 1 1 616E2C07
-P 6540 3760
-F 0 "J1" H 6670 4190 50  0000 R CNN
-F 1 "Conn_01x08_Male" V 6480 4060 50  0000 R CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x08_P2.00mm_Vertical" H 6540 3760 50  0001 C CNN
-F 3 "~" H 6540 3760 50  0001 C CNN
-	1    6540 3760
-	-1   0    0    -1  
-$EndComp
-$Comp
 L My_KiCad_Symbol_Library:nRF24 U1
 U 1 1 616E7E41
 P 5600 3760
@@ -35,20 +24,31 @@ F 3 "" H 5600 3760 50  0001 C CNN
 	1    5600 3760
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:Conn_01x08_Female J1
+U 1 1 617389BA
+P 6580 3760
+F 0 "J1" H 6440 4180 50  0000 L CNN
+F 1 "Conn_01x08_Female" V 6630 3330 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 6580 3760 50  0001 C CNN
+F 3 "~" H 6580 3760 50  0001 C CNN
+	1    6580 3760
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	6100 3460 6340 3460
+	6100 3460 6380 3460
 Wire Wire Line
-	6100 3560 6340 3560
+	6100 3560 6380 3560
 Wire Wire Line
-	6340 3660 6100 3660
+	6100 3660 6380 3660
 Wire Wire Line
-	6100 3760 6340 3760
+	6100 3760 6380 3760
 Wire Wire Line
-	6340 3860 6100 3860
+	6100 3860 6380 3860
 Wire Wire Line
-	6100 3960 6340 3960
+	6100 3960 6380 3960
 Wire Wire Line
-	6340 4060 6100 4060
+	6100 4060 6380 4060
 Wire Wire Line
-	6100 4160 6340 4160
+	6100 4160 6380 4160
 $EndSCHEMATC
