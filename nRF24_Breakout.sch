@@ -36,7 +36,7 @@ F 3 "~" H 6580 3760 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6100 3460 6380 3460
+	6100 3460 6120 3460
 Wire Wire Line
 	6100 3560 6380 3560
 Wire Wire Line
@@ -50,5 +50,34 @@ Wire Wire Line
 Wire Wire Line
 	6100 4060 6380 4060
 Wire Wire Line
-	6100 4160 6380 4160
+	6100 4160 6180 4160
+$Comp
+L Device:CP1 C1
+U 1 1 6174D65A
+P 6500 3090
+F 0 "C1" V 6248 3090 50  0000 C CNN
+F 1 "10uF" V 6339 3090 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 6500 3090 50  0001 C CNN
+F 3 "~" H 6500 3090 50  0001 C CNN
+	1    6500 3090
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6350 3090 6120 3090
+Wire Wire Line
+	6120 3090 6120 3460
+Connection ~ 6120 3460
+Wire Wire Line
+	6120 3460 6380 3460
+Wire Wire Line
+	6810 3090 6810 3240
+Wire Wire Line
+	6810 3240 6180 3240
+Wire Wire Line
+	6180 3240 6180 4160
+Connection ~ 6180 4160
+Wire Wire Line
+	6180 4160 6380 4160
+Wire Wire Line
+	6650 3090 6810 3090
 $EndSCHEMATC
