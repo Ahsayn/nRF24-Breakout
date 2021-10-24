@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 15)
+    (drawings 20)
     (tracks 48)
     (zones 0)
     (modules 3)
@@ -69,7 +69,7 @@
     (visible_elements 7FFFFFFF)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
-      (usegerberextensions false)
+      (usegerberextensions true)
       (usegerberattributes true)
       (usegerberadvancedattributes true)
       (creategerberjobfile true)
@@ -91,9 +91,9 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory "Gerber Export/"))
   )
 
   (net 0 "")
@@ -455,6 +455,13 @@
     )
   )
 
+  (gr_line (start 130.9243 90.2716) (end 130.9243 88.519) (layer F.SilkS) (width 0.12))
+  (gr_line (start 143.4592 90.2716) (end 130.9243 90.2716) (layer F.SilkS) (width 0.12))
+  (gr_line (start 143.4592 88.519) (end 143.4592 90.2716) (layer F.SilkS) (width 0.12))
+  (gr_line (start 130.9116 88.519) (end 143.4592 88.519) (layer F.SilkS) (width 0.12))
+  (gr_text "nRF24 Breakout" (at 137.16 89.408) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
   (gr_arc (start 140.97 109.728) (end 134.62 109.728) (angle -180) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 155.448 87.376) (end 155.448 109.728) (layer Edge.Cuts) (width 0.05) (tstamp 6174DC79))
   (gr_line (start 129.54 109.728) (end 129.54 87.376) (layer Edge.Cuts) (width 0.05) (tstamp 6174DC78))
@@ -538,7 +545,7 @@
   (segment (start 154.570019 92.182019) (end 154.570019 102.676981) (width 0.25) (layer F.Cu) (net 8))
   (segment (start 151.892 89.504) (end 154.570019 92.182019) (width 0.25) (layer F.Cu) (net 8))
 
-  (zone (net 7) (net_name "Net-(C1-Pad1)") (layer F.Cu) (tstamp 0) (hatch edge 0.508)
+  (zone (net 7) (net_name "Net-(C1-Pad1)") (layer F.Cu) (tstamp 6174F410) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
